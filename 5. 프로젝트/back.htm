@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="ko">
+                                                                <head>
+                <script type="text/javascript">if (!window.T) { window.T = {} }
+window.T.config = {"TOP_SSL_URL":"https://www.tistory.com","PREVIEW":false,"ROLE":"guest","PREV_PAGE":"","NEXT_PAGE":"","BLOG":{"id":2890799,"name":"developer-jjun","title":"개발하냥","isDormancy":false,"nickName":"개발하냥","status":"open","profileStatus":"normal"},"NEED_COMMENT_LOGIN":false,"COMMENT_LOGIN_CONFIRM_MESSAGE":"","LOGIN_URL":"https://www.tistory.com/auth/login/?redirectUrl=https://developer-jjun.tistory.com/36","DEFAULT_URL":"https://developer-jjun.tistory.com","USER":{"name":null,"homepage":null,"id":0,"profileImage":null},"SUBSCRIPTION":{"status":"none","isConnected":false,"isPending":false,"isWait":false,"isProcessing":false,"isNone":true},"IS_LOGIN":false,"HAS_BLOG":false,"IS_SUPPORT":false,"TOP_URL":"http://www.tistory.com","JOIN_URL":"https://www.tistory.com/member/join","ROLE_GROUP":"visitor"};
+window.T.entryInfo = {"entryId":36,"isAuthor":false,"categoryId":812333,"categoryLabel":"프로그래밍/JavaScript"};
+window.appInfo = {"domain":"tistory.com","topUrl":"https://www.tistory.com","loginUrl":"https://www.tistory.com/auth/login","logoutUrl":"https://www.tistory.com/auth/logout"};
+window.initData = {};
+
+window.TistoryBlog = {
+    basePath: "",
+    url: "https://developer-jjun.tistory.com",
+    tistoryUrl: "https://developer-jjun.tistory.com",
+    manageUrl: "https://developer-jjun.tistory.com/manage",
+    token: "04fLdIMOQs7O1UvHy8hgHEFKCnwQvQ+f2JW85adyM/7y6sQgha47/mrsSefFPZA/"
+};
+var servicePath = "";
+var blogURL = "";</script>
+
+                
+                
+                        <!-- BusinessLicenseInfo - START -->
+        
+            <link href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-9aacef4c78da848fb8d226a2d0cf9df06bf4e237/static/plugin/BusinessLicenseInfo/style.css" rel="stylesheet" type="text/css"/>
+
+            <script>function switchFold(entryId) {
+    var businessLayer = document.getElementById("businessInfoLayer_" + entryId);
+
+    if (businessLayer) {
+        if (businessLayer.className.indexOf("unfold_license") > 0) {
+            businessLayer.className = "business_license_layer";
+        } else {
+            businessLayer.className = "business_license_layer unfold_license";
+        }
+    }
+}
+</script>
+
+        
+        <!-- BusinessLicenseInfo - END -->
+        <!-- DaumShow - START -->
+        <style type="text/css">#daumSearchBox {
+    height: 21px;
+    background-image: url(//i1.daumcdn.net/imgsrc.search/search_all/show/tistory/plugin/bg_search2_2.gif);
+    margin: 5px auto;
+    padding: 0;
+}
+
+#daumSearchBox input {
+    background: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#daumSearchBox #daumLogo {
+    width: 34px;
+    height: 21px;
+    float: left;
+    margin-right: 5px;
+    background-image: url(//i1.daumcdn.net/img-media/tistory/img/bg_search1_2_2010ci.gif);
+}
+
+#daumSearchBox #show_q {
+    background-color: transparent;
+    border: none;
+    font: 12px Gulim, Sans-serif;
+    color: #555;
+    margin-top: 4px;
+    margin-right: 15px;
+    float: left;
+}
+
+#daumSearchBox #show_btn {
+    background-image: url(//i1.daumcdn.net/imgsrc.search/search_all/show/tistory/plugin/bt_search_2.gif);
+    width: 37px;
+    height: 21px;
+    float: left;
+    margin: 0;
+    cursor: pointer;
+    text-indent: -1000em;
+}
+</style>
+
+        <!-- DaumShow - END -->
+
+<!-- System - START -->
+
+<!-- System - END -->
+
+        <!-- TistoryProfileLayer - START -->
+        <link href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-9aacef4c78da848fb8d226a2d0cf9df06bf4e237/static/plugin/TistoryProfileLayer/style.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-9aacef4c78da848fb8d226a2d0cf9df06bf4e237/static/plugin/TistoryProfileLayer/script.js"></script>
+
+        <!-- TistoryProfileLayer - END -->
+
+                
+                <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="format-detection" content="telephone=no">
+<script src="//t1.daumcdn.net/tistory_admin/lib/jquery/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="//t1.daumcdn.net/tistory_admin/lib/lightbox/js/lightbox-v2.10.0.min.js" defer></script>
+<script type="text/javascript" src="//t1.daumcdn.net/tiara/js/v1/tiara.min.js"></script><meta name="referrer" content="always"/>
+<meta name="google-adsense-platform-account" content="ca-host-pub-9691043933427338"/>
+<meta name="google-adsense-platform-domain" content="tistory.com"/>
+<meta name="description" content="[JavaScript] 이전 단계로 돌아가기 코드 function goBack() { window.history.back(); }"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="https://developer-jjun.tistory.com/36"/>
+<meta property="og.article.author" content="개발하냥"/>
+<meta property="og:site_name" content="개발하냥"/>
+<meta property="og:title" content="[javascript] 이전페이지로 돌아가기"/>
+<meta name="by" content="개발하냥"/>
+<meta property="og:description" content="[JavaScript] 이전 단계로 돌아가기 코드 function goBack() { window.history.back(); }"/>
+<meta property="og:image" content="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F998199345AF1516725"/>
+<meta property="article:section" content="'IT 인터넷'"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@TISTORY"/>
+<meta name="twitter:title" content="[javascript] 이전페이지로 돌아가기"/>
+<meta name="twitter:description" content="[JavaScript] 이전 단계로 돌아가기 코드 function goBack() { window.history.back(); }"/>
+<meta property="twitter:image" content="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F998199345AF1516725"/>
+<meta content="https://developer-jjun.tistory.com/36" property="dg:plink" content="https://developer-jjun.tistory.com/36"/>
+<meta name="plink"/>
+<meta name="title" content="[javascript] 이전페이지로 돌아가기"/>
+<meta name="article:media_name" content="개발하냥"/>
+<meta property="article:mobile_url" content="https://developer-jjun.tistory.com/m/36"/>
+<meta property="article:pc_url" content="https://developer-jjun.tistory.com/36"/>
+<meta property="article:mobile_view_url" content="https://developer-jjun.tistory.com/m/36"/>
+<meta property="article:pc_view_url" content="https://developer-jjun.tistory.com/36"/>
+<meta property="article:talk_channel_view_url" content="https://developer-jjun.tistory.com/m/36"/>
+<meta property="article:pc_service_home" content="https://www.tistory.com"/>
+<meta property="article:mobile_service_home" content="https://www.tistory.com/m"/>
+<meta property="article:txid" content="2890799_36"/>
+<meta property="article:published_time" content="2018-05-08T16:31:06+09:00"/>
+<meta property="og:regDate" content="20180508043106"/>
+<meta property="article:modified_time" content="2018-05-08T16:31:06+09:00"/>
+<link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/lib/lightbox/css/lightbox.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/www/style/font.css"/>
+<link rel="stylesheet" type="text/css" href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-9aacef4c78da848fb8d226a2d0cf9df06bf4e237/static/style/content.css"/>
+<link rel="stylesheet" type="text/css" href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-9aacef4c78da848fb8d226a2d0cf9df06bf4e237/static/style/uselessPMargin.css"/>
+<script type="text/javascript">(function() {
+    var tjQuery = jQuery.noConflict(true);
+    window.tjQuery = tjQuery;
+    window.orgjQuery = window.jQuery; window.jQuery = tjQuery;
+    window.jQuery = window.orgjQuery; delete window.orgjQuery;
+})()</script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-9aacef4c78da848fb8d226a2d0cf9df06bf4e237/static/script/base.js"></script>
+<script type="text/javascript" src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+
+                
+<meta charset="UTF-8">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+<title>[javascript] 이전페이지로 돌아가기</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="stylesheet" href="https://tistory1.daumcdn.net/tistory/2890799/skin/style.css?_version_=1554471884">
+<script src="//t1.daumcdn.net/tistory_admin/lib/jquery/jquery-1.12.4.min.js"></script>
+<!-- 소스코드 라이브러리 추가 -->
+<span style="font-family: Tahoma;"> 
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory/2890799/skin/images/shCore.js?_version_=1554471884"></script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory/2890799/skin/images/shLegacy.js?_version_=1554471884"></script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory/2890799/skin/images/shBrushBash.js?_version_=1554471884"></script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory/2890799/skin/images/shBrushCpp.js?_version_=1554471884"></script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory/2890799/skin/images/shBrushCSharp.js?_version_=1554471884"></script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory/2890799/skin/images/shBrushCss.js?_version_=1554471884"></script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory/2890799/skin/images/shBrushDelphi.js?_version_=1554471884"></script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory/2890799/skin/images/shBrushDiff.js?_version_=1554471884"></script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory/2890799/skin/images/shBrushGroovy.js?_version_=1554471884"></script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory/2890799/skin/images/shBrushJava.js?_version_=1554471884"></script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory/2890799/skin/images/shBrushJScript.js?_version_=1554471884"></script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory/2890799/skin/images/shBrushPhp.js?_version_=1554471884"></script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory/2890799/skin/images/shBrushPlain.js?_version_=1554471884"></script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory/2890799/skin/images/shBrushPython.js?_version_=1554471884"></script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory/2890799/skin/images/shBrushRuby.js?_version_=1554471884"></script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory/2890799/skin/images/shBrushScala.js?_version_=1554471884"></script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory/2890799/skin/images/shBrushSql.js?_version_=1554471884"></script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory/2890799/skin/images/shBrushVb.js?_version_=1554471884"></script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory/2890799/skin/images/shBrushXml.js?_version_=1554471884"></script>
+<link type="text/css" rel="stylesheet" href="https://tistory1.daumcdn.net/tistory/2890799/skin/images/shCore.css?_version_=1554471884">
+<link type="text/css" rel="stylesheet" href="https://tistory1.daumcdn.net/tistory/2890799/skin/images/shThemeDefault.css?_version_=1554471884">
+<script type="text/javascript">
+SyntaxHighlighter.all();
+</script>
+</span>
+<!-- end -->
+
+                
+                
+                <link rel="stylesheet" type="text/css" href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-9aacef4c78da848fb8d226a2d0cf9df06bf4e237/static/style/revenue.css"/>
+<link rel="canonical" href="https://developer-jjun.tistory.com/36"/>
+
+<!-- BEGIN STRUCTURED_DATA -->
+<script type="application/ld+json">
+    {"@context":"http://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@id":"https://developer-jjun.tistory.com/36","name":null},"url":"https://developer-jjun.tistory.com/36","headline":"[javascript] 이전페이지로 돌아가기","description":"[JavaScript] 이전 단계로 돌아가기 코드 function goBack() { window.history.back(); }","author":{"@type":"Person","name":"개발하냥","logo":null},"image":{"@type":"ImageObject","url":"https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F998199345AF1516725","width":"800px","height":"800px"},"datePublished":"2018-05-08T16:31:06+09:00","dateModified":"2018-05-08T16:31:06+09:00","publisher":{"@type":"Organization","name":"TISTORY","logo":{"@type":"ImageObject","url":"https://t1.daumcdn.net/tistory_admin/static/images/openGraph/opengraph.png","width":"800px","height":"800px"}}}
+</script>
+<!-- END STRUCTURED_DATA -->
+<link rel="stylesheet" type="text/css" href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-9aacef4c78da848fb8d226a2d0cf9df06bf4e237/static/style/dialog.css"/>
+<link rel="stylesheet" type="text/css" href="//t1.daumcdn.net/tistory_admin/www/style/top/font.css"/>
+<link rel="stylesheet" type="text/css" href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-9aacef4c78da848fb8d226a2d0cf9df06bf4e237/static/style/postBtn.css"/>
+<link rel="stylesheet" type="text/css" href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-9aacef4c78da848fb8d226a2d0cf9df06bf4e237/static/style/comment.css"/>
+<link rel="stylesheet" type="text/css" href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-9aacef4c78da848fb8d226a2d0cf9df06bf4e237/static/style/shortcut.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-9aacef4c78da848fb8d226a2d0cf9df06bf4e237/static/style/tistory.css"/>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-9aacef4c78da848fb8d226a2d0cf9df06bf4e237/static/script/common.js"></script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-9aacef4c78da848fb8d226a2d0cf9df06bf4e237/static/script/comment.js" defer=""></script>
+
+                
+                </head>
+                                                <body id="tt-body-page" class="post-type-text  paging-view-more color-green color-background-lightgray shape-line-round"
+Onload="dp.SyntaxHighlighter.HighlightAll('code');">
+                
+                
+                
+
+<div id="acc-nav">
+	<a href="#content">본문 바로가기</a>
+</div>
+<div id="wrap">
+
+	<header id="header">
+		<h1><a href="https://developer-jjun.tistory.com/">
+			<img src="https://tistory1.daumcdn.net/tistory/2890799/skin/images/ssack1.PNG" class="header_title_gif">
+			개발하냥
+			<img src="https://tistory1.daumcdn.net/tistory/2890799/skin/images/ssack1.PNG" class="header_title_gif">
+			</a></h1>
+		<div class="social-link">
+			
+			
+			
+			
+		</div>		
+		<button type="button" class="mobile-menu"><span>메뉴</span></button>
+		<div class="menu">
+			<nav id="gnb">
+				<ul class="tt_category"><li class=""><a href="/category" class="link_tit"> 개발 노트 <span class="c_cnt">(33)</span> </a>
+  <ul class="category_list"><li class=""><a href="/category/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D" class="link_item"> 프로그래밍 <span class="c_cnt">(27)</span> </a>
+  <ul class="sub_category_list"><li class=""><a href="/category/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/Spring" class="link_sub_item"> Spring <span class="c_cnt">(5)</span> </a></li>
+<li class=""><a href="/category/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/JavaScript" class="link_sub_item"> JavaScript <span class="c_cnt">(15)</span> </a></li>
+<li class=""><a href="/category/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/Vue" class="link_sub_item"> Vue <span class="c_cnt">(0)</span> </a></li>
+<li class=""><a href="/category/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/JSP" class="link_sub_item"> JSP <span class="c_cnt">(4)</span> </a></li>
+<li class=""><a href="/category/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/HTML%20%26%20CSS" class="link_sub_item"> HTML &amp; CSS <span class="c_cnt">(3)</span> </a></li>
+<li class=""><a href="/category/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/C%23" class="link_sub_item"> C# <span class="c_cnt">(0)</span> </a></li>
+<li class=""><a href="/category/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5" class="link_sub_item"> 인공지능 <span class="c_cnt">(0)</span> </a></li>
+</ul>
+</li>
+<li class=""><a href="/category/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4" class="link_item"> 데이터베이스 <span class="c_cnt">(5)</span> </a>
+  <ul class="sub_category_list"><li class=""><a href="/category/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/%EA%B4%80%EA%B3%84%ED%98%95%28RDB%29" class="link_sub_item"> 관계형(RDB) <span class="c_cnt">(5)</span> </a></li>
+<li class=""><a href="/category/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/%EC%8B%9C%EA%B3%84%EC%97%B4%28TSDB%29" class="link_sub_item"> 시계열(TSDB) <span class="c_cnt">(0)</span> </a></li>
+</ul>
+</li>
+<li class=""><a href="/category/%EB%AA%A8%EB%B0%94%EC%9D%BC" class="link_item"> 모바일 <span class="c_cnt">(0)</span> </a>
+  <ul class="sub_category_list"><li class=""><a href="/category/%EB%AA%A8%EB%B0%94%EC%9D%BC/Android" class="link_sub_item"> Android <span class="c_cnt">(0)</span> </a></li>
+<li class=""><a href="/category/%EB%AA%A8%EB%B0%94%EC%9D%BC/iOS" class="link_sub_item"> iOS <span class="c_cnt">(0)</span> </a></li>
+</ul>
+</li>
+<li class=""><a href="/category/%EA%B8%B0%ED%83%80" class="link_item"> 기타 <span class="c_cnt">(1)</span> </a>
+  <ul class="sub_category_list"><li class=""><a href="/category/%EA%B8%B0%ED%83%80/%ED%98%95%EC%83%81%EA%B4%80%EB%A6%AC" class="link_sub_item"> 형상관리 <span class="c_cnt">(0)</span> </a></li>
+<li class=""><a href="/category/%EA%B8%B0%ED%83%80/Docker" class="link_sub_item"> Docker <span class="c_cnt">(0)</span> </a></li>
+<li class=""><a href="/category/%EA%B8%B0%ED%83%80/Etc.." class="link_sub_item"> Etc.. <span class="c_cnt">(1)</span> </a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+			</nav>
+		</div>
+		<div class="search">
+			
+					<input type="text" name="search" value="" placeholder="검색내용을 입력하세요." onkeypress="if (event.keyCode == 13) { try {
+    window.location.href = '/search' + '/' + looseURIEncode(document.getElementsByName('search')[0].value);
+    document.getElementsByName('search')[0].value = '';
+    return false;
+} catch (e) {} }">
+					<button type="submit" onclick="try {
+    window.location.href = '/search' + '/' + looseURIEncode(document.getElementsByName('search')[0].value);
+    document.getElementsByName('search')[0].value = '';
+    return false;
+} catch (e) {}">검색</button>
+					<div class="close-search"></div>
+				
+		</div>
+	</header>
+	<hr>
+	<section class="container">
+		<article id="content">
+
+			
+
+			
+
+			
+
+			<div class="inner">
+				
+
+				            
+                
+	
+	
+		<div class="hgroup">
+			<div class="category">프로그래밍/JavaScript</div>
+			<h1>[javascript] 이전페이지로 돌아가기 </h1>
+			<div class="post-meta">
+				<span class="author">개발하냥</span>
+				<span class="date">2018. 5. 8. 16:31</span>
+				
+			</div>
+		</div>
+		<div class="entry-content">
+			
+                    <!-- GoogleAD2015 - START -->
+
+<!-- GoogleAD2015 - END -->
+
+                                <!-- System - START -->
+
+<!-- System - END -->
+
+            <div class="tt_article_useless_p_margin contents_style"><p><br /></p>
+<p style="text-align: center; clear: none; float: none;"><span class="imageblock" style="display: inline-block; width: 156px; width: 156px; height: 160px;; height: auto; max-width: 100%;"><img src="https://t1.daumcdn.net/cfile/tistory/998199345AF1516725" style="width: 156px; height: 160px;" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F998199345AF1516725" width="156" height="160" filename="1.png" filemime="image/jpeg"/></span></p>
+<p><br /></p>
+<p><br /></p>
+<p style="text-align: center;"><b><span style="font-size: 14pt;">[JavaScript</span><span style="font-size: 14pt;">] 이전 단계로 돌아가기</span></b></p>
+<p><br /></p>
+<p><br /></p>
+<div class="txc-textbox" style="border-style: double; border-width: 3px; border-color: rgb(193, 193, 193); background-color: rgb(238, 238, 238); padding: 10px;">
+<p style="text-align: center;"><span style="font-size: 14px;">
+코드
+</span></p>
+</div>
+<pre class="brush:js">
+function goBack() {
+    window.history.back();
+}
+</pre>
+<pre class="brush:html">
+<input type="button" class="btn_list" value="취소" onClick="goBack()">
+</pre>
+<p><br /></p></div>
+            <!-- System - START -->
+
+<!-- System - END -->
+
+                    <!-- GoogleAD2015 - START -->
+
+<!-- GoogleAD2015 - END -->
+
+<script onerror="changeAdsenseToAdfit()" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9527582522912841" crossorigin="anonymous"></script>
+<!-- inventory -->
+<ins class="adsbygoogle" style="margin:50px 0; display:block" data-ad-client="ca-pub-9527582522912841" data-ad-slot="4947159016" data-ad-format="auto" data-full-width-responsive="true" data-ad-type="inventory" data-ad-adfit-unit="DAN-HCZEy0KQLPMGnGuC"></ins>
+
+<script id="adsense_script">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<script>
+    if(window.ObserveAdsenseUnfilledState !== undefined){ ObserveAdsenseUnfilledState(); }
+</script>
+<div class="container_postbtn #post_button_group">
+  <div class="postbtn_like"><script>window.ReactionButtonType = 'reaction';
+window.ReactionApiUrl = '//developer-jjun.tistory.com/reaction';
+window.ReactionReqBody = {
+    entryId: 36
+}</script>
+<div class="wrap_btn" id="reaction-36"></div>
+<script src="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-9aacef4c78da848fb8d226a2d0cf9df06bf4e237/static/script/reaction-button-container.min.js"></script><div class="wrap_btn wrap_btn_share"><button type="button" class="btn_post sns_btn btn_share" aria-expanded="false" data-thumbnail-url="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&amp;fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F998199345AF1516725" data-title="[javascript] 이전페이지로 돌아가기" data-description="[JavaScript] 이전 단계로 돌아가기 코드 function goBack() { window.history.back(); }" data-profile-image="https://tistory1.daumcdn.net/tistory/2890799/attach/ecaa265ccaee4ab4aa88a5514db21b1b" data-profile-name="개발하냥" data-pc-url="https://developer-jjun.tistory.com/36" data-relative-pc-url="/36" data-blog-title="개발하냥"><span class="ico_postbtn ico_share">공유하기</span></button>
+  <div class="layer_post" id="tistorySnsLayer"></div>
+</div><div class="wrap_btn wrap_btn_etc" data-entry-id="36" data-entry-visibility="public" data-category-visibility="public"><button type="button" class="btn_post btn_etc2" aria-expanded="false"><span class="ico_postbtn ico_etc">게시글 관리</span></button>
+  <div class="layer_post" id="tistoryEtcLayer"></div>
+</div></div>
+<button type="button" class="btn_menu_toolbar btn_subscription  #subscribe" data-blog-id="2890799" data-url="https://developer-jjun.tistory.com/36" data-device="web_pc"><em class="txt_state">구독하기</em><strong class="txt_tool_id">개발하냥</strong><span class="img_common_tistory ico_check_type1"></span></button><div class="postbtn_ccl" data-ccl-type="1" data-ccl-derive="2">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.ko" target="_blank" class="link_ccl" rel="license">
+        <span class="bundle_ccl">
+            <span class="ico_postbtn ico_ccl1">저작자표시</span> <span class="ico_postbtn ico_ccl2">비영리</span> <span class="ico_postbtn ico_ccl3">변경금지</span> 
+        </span>
+    </a>
+</div>
+<!--
+<rdf:RDF xmlns="https://web.resource.org/cc/" xmlns:dc="https://purl.org/dc/elements/1.1/" xmlns:rdf="https://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <Work rdf:about="">
+        <license rdf:resource="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.ko" />
+    </Work>
+    <License rdf:about="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.ko">
+        <permits rdf:resource="https://web.resource.org/cc/Reproduction"/>
+        <permits rdf:resource="https://web.resource.org/cc/Distribution"/>
+        <requires rdf:resource="https://web.resource.org/cc/Notice"/>
+        <requires rdf:resource="https://web.resource.org/cc/Attribution"/>
+        <prohibits rdf:resource="https://web.resource.org/cc/CommercialUse"/>
+
+    </License>
+</rdf:RDF>
+-->  <div data-tistory-react-app="SupportButton"></div>
+</div>
+
+		</div>
+		
+			<div class="tags">
+				<h2>태그</h2>
+				<div class="items">
+					<a href="/tag/history%20back" rel="tag">history back</a>, <a href="/tag/javascript%20%EC%9D%B4%EC%A0%84" rel="tag">javascript 이전</a>, <a href="/tag/%EC%9D%B4%EC%A0%84%EB%8B%A8%EA%B3%84" rel="tag">이전단계</a>, <a href="/tag/%EC%9D%B4%EC%A0%84%ED%8E%98%EC%9D%B4%EC%A7%80" rel="tag">이전페이지</a>
+				</div>
+			</div>
+		
+
+		
+			<div class="related-articles">
+				<h2><strong>'프로그래밍/JavaScript'</strong> 최근게시물</h2>
+				<ul>
+					
+						<li>
+							<a href="/39?category=812333">
+								<span class="thum">
+									
+										<img src="//i1.daumcdn.net/thumb/C264x200/?fname=https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F995F0E395B23131D38" alt="">
+									
+								</span>
+								<span class="title">[JavaScript] 날짜 계산</span>
+							</a>
+						</li>
+					
+						<li>
+							<a href="/37?category=812333">
+								<span class="thum">
+									
+										<img src="//i1.daumcdn.net/thumb/C264x200/?fname=https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F994A08345AF1531E0D" alt="">
+									
+								</span>
+								<span class="title">[JavaScript] 날짜 차이 계산(년,월,일)</span>
+							</a>
+						</li>
+					
+						<li>
+							<a href="/35?category=812333">
+								<span class="thum">
+									
+										<img src="//i1.daumcdn.net/thumb/C264x200/?fname=https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F9975674C5AF13B7B2F" alt="">
+									
+								</span>
+								<span class="title">[JQuery] 리스트 셀 병합 방법</span>
+							</a>
+						</li>
+					
+						<li>
+							<a href="/33?category=812333">
+								<span class="thum">
+									
+										<img src="//i1.daumcdn.net/thumb/C264x200/?fname=https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F990F813D5AF133EC0C" alt="">
+									
+								</span>
+								<span class="title">[JQuery]숫자값 콤마제거후 DB저장</span>
+							</a>
+						</li>
+					
+				</ul>
+			</div>
+		
+
+		<div data-tistory-react-app="Namecard"></div><div id="entry36Comment">
+			<div class="comments">
+				
+					<div class="comment-list">
+						<ul>
+							            
+
+            
+						</ul>
+					</div>
+				
+
+				        <form method="post" action="/comment/add/36" onsubmit="return false" style="margin: 0">
+            
+	<div class="comment-form">
+		
+			<div class="field">
+				
+					<input type="text" name="name" value="" placeholder="이름">
+					<input type="password" name="password" value="" placeholder="암호">
+				
+				<div class="secret">
+					<input type="checkbox" name="secret" id="secret">
+					<label for="secret" tabindex="0">Secret</label>
+				</div>
+			</div>
+		
+		<textarea name="comment" cols="" rows="4" placeholder="여러분의 소중한 댓글을 입력해주세요."></textarea>
+		<div class="submit">
+			<button type="submit" class="btn" onclick="addComment(this, 36); return false;">댓글달기</button>
+		</div>
+</div>
+
+        </form>
+			</div>
+		</div>
+<script type="text/javascript">loadedComments[36]=true;
+findFragmentAndHighlight(36);</script>
+
+
+	
+
+                
+            
+			</div>
+
+			
+
+			
+
+			
+
+		</article>
+	</section>
+	<hr>
+	<footer id="footer">
+		<nav class="menu">
+			<ul>
+  <li class="t_menu_home first"><a href="/" target="">홈</a></li>
+  <li class="t_menu_category"><a href="/category" target="">카테고리</a></li>
+  <li class="t_menu_link_1"><a href="http://developer-jjun.tistory.com/notice/13" target="">공지사항</a></li>
+  <li class="t_menu_guestbook last"><a href="/guestbook" target="">방명록</a></li>
+</ul>
+		</nav>
+		<div class="today_total">			
+			<span class="today">오늘 34&nbsp;&nbsp;/&nbsp;&nbsp;</span>
+			<span class="yesterday">어제 58&nbsp;&nbsp;/&nbsp;&nbsp;</span>
+			<span class="total">전체 348,909</span>
+		</div>
+		<p class="copyright">2019 Custom by Jun & Designed by <a href="https://apost.kr">APost.kr</a> <a href="https://developer-jjun.tistory.com/manage" class="admin">관리자</a></p>
+	</footer>
+		
+</div>
+
+<script src="https://tistory1.daumcdn.net/tistory/2890799/skin/images/script.js?_version_=1554471884"></script>
+
+<div class="#menubar menu_toolbar ">
+  <h2 class="screen_out">티스토리툴바</h2>
+</div>
+<div class="#menubar menu_toolbar "></div>
+<div class="layer_tooltip">
+  <div class="inner_layer_tooltip">
+    <p class="desc_g"></p>
+  </div>
+</div>
+<iframe id="editEntry" style="position:absolute;width:1px;height:1px;left:-100px;top:-100px" src="//developer-jjun.tistory.com/api"></iframe>
+
+                <!-- DragSearchHandler - START -->
+<script src="//search1.daumcdn.net/search/statics/common/js/g/search_dragselection.min.js"></script>
+
+<!-- DragSearchHandler - END -->
+
+                
+                <script type="text/javascript">(function($) {
+    $(document).ready(function() {
+        lightbox.options.fadeDuration = 200;
+        lightbox.options.resizeDuration = 200;
+        lightbox.options.wrapAround = false;
+        lightbox.options.albumLabel = "%1 / %2";
+    })
+})(tjQuery);</script>
+<div style="margin:0; padding:0; border:none; background:none; float:none; clear:none; z-index:0"></div>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-9aacef4c78da848fb8d226a2d0cf9df06bf4e237/static/script/common.js"></script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-9aacef4c78da848fb8d226a2d0cf9df06bf4e237/static/script/shortcut.min.js"></script>
+<script type="text/javascript">window.roosevelt_params_queue = window.roosevelt_params_queue || [{channel_id: 'dk', channel_label: '{tistory}'}]</script>
+<script type="text/javascript" src="//t1.daumcdn.net/midas/rt/dk_bt/roosevelt_dk_bt.js" async="async"></script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-9aacef4c78da848fb8d226a2d0cf9df06bf4e237/static/script/menubar.min.js"></script>
+
+                
+                <script>window.tiara = {"svcDomain":"user.tistory.com","section":"글뷰","trackPage":"글뷰_보기","page":"글뷰","key":"2890799-36","customProps":{"userId":"0","blogId":"2890799","entryId":"36","role":"guest","trackPage":"글뷰_보기","filterTarget":false},"entry":{"entryId":"36","categoryName":"프로그래밍/JavaScript","categoryId":"812333","author":"3751001","image":"cfile27.uf@998199345AF1516725B32F.png","plink":"/36","tags":["history back","javascript 이전","이전단계","이전페이지"]},"kakaoAppKey":"3e6ddd834b023f24221217e370daed18","appUserId":"null"}</script>
+<script type="module" src="https://t1.daumcdn.net/tistory_admin/frontend/tiara/v1.0.0/index.js"></script>
+<script src="https://t1.daumcdn.net/tistory_admin/frontend/tiara/v1.0.0/polyfills-legacy.min.js" nomodule="true" defer="true"></script>
+<script src="https://t1.daumcdn.net/tistory_admin/frontend/tiara/v1.0.0/index-legacy.js" nomodule="true" defer="true"></script>
+
+                </body>
+</html>

@@ -1,0 +1,113 @@
+﻿<Page x:Class="JunhoProject.Menu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:JunhoProject"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1300"
+      Title="Menu">
+    <Page.Resources>
+        <Style TargetType="Button" x:Key="BtnMouseOverDisable" BasedOn= "{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" BorderThickness="{TemplateBinding BorderThickness}"
+             Padding="{TemplateBinding Padding}"
+             BorderBrush="{TemplateBinding BorderBrush}"
+             CornerRadius="5"
+             Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="BorderBrush" Value="Gainsboro"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Opacity" Value="0.25"/>
+                                <Setter Property="BorderBrush" Value="Transparent"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+    <Grid Background="#FFEEEEEE">
+        <ListView x:Name="listView_user" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,40,963,150" BorderBrush="#FF000308" Foreground="Black" Background="#FFF6F6F6">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="이미지" Width="90">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Image Width="60" Height="60" Source="{Binding UserImg}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="상품" DisplayMemberBinding="{Binding Name}" Width="120"/>
+                    <GridViewColumn Header="가격" DisplayMemberBinding="{Binding UserAge}" Width="60"/>
+                    <GridViewColumn Header="수량" DisplayMemberBinding="{Binding Count}" Width="30"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="btn_doSomeThing" Content="" HorizontalAlignment="Left" Margin="400,40,0,0" VerticalAlignment="Top" Height="250" Width="250" Click="btn_doSomeThing_Click" Style="{StaticResource BtnMouseOverDisable}">
+            <Button.Background >
+                <ImageBrush ImageSource="/스위트콤보.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn_doSomeThing1" Content="" HorizontalAlignment="Left" Margin="700,40,0,0" VerticalAlignment="Top" Height="250" Width="250" Click="btn_doSomeThing1_Click" Style="{StaticResource BtnMouseOverDisable}">
+            <Button.Background>
+                <ImageBrush ImageSource="/더블콤보.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn_doSomeThing3" Content="" HorizontalAlignment="Left" Margin="400,320,0,0" VerticalAlignment="Top" Height="250" Width="250" Click="btn_doSomeThing3_Click" Style="{StaticResource BtnMouseOverDisable}">
+            <Button.Background>
+                <ImageBrush ImageSource="/오리지널팝콘L.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn_doSomeThing5" Content="" HorizontalAlignment="Left" Margin="700,320,0,0" VerticalAlignment="Top" Height="250" Width="250" Click="btn_doSomeThing5_Click" Style="{StaticResource BtnMouseOverDisable}">
+            <Button.Background>
+                <ImageBrush ImageSource="/카라멜팝콘L.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="next" Content="" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="70" Width="90" Click="next_Click" FontSize="20" BorderBrush="#FFEEEEEE" Style="{StaticResource BtnMouseOverDisable}">
+            <Button.Background>
+                <ImageBrush ImageSource="/다음.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn_doSomeThing2" Content="" HorizontalAlignment="Left" Margin="1000,40,0,0" VerticalAlignment="Top" Height="250" Width="250" Click="btn_doSomeThing2_Click" Style="{StaticResource BtnMouseOverDisable}">
+            <Button.Background>
+                <ImageBrush ImageSource="/반반팝콘.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="lotci" Content="" HorizontalAlignment="Left" Margin="1014,324,0,0" VerticalAlignment="Top" Height="69" Width="222" IsCancel="True" Foreground="White" BorderBrush="White" Style="{StaticResource BtnMouseOverDisable}">
+            <Button.Background>
+                <ImageBrush ImageSource="/롯데시네마문구.webp" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="dreami" Content="" Margin="997,400,0,0" Style="{StaticResource BtnMouseOverDisable}" VerticalAlignment="Top" Width="256" Height="178" HorizontalAlignment="Left">
+            <Button.Resources>
+                <Style TargetType= "Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <ImageBrush ImageSource="/드리미.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="payment" Content="결제하기" HorizontalAlignment="Left" Height="50" Margin="50,570,0,0" VerticalAlignment="Top" Width="230" Background="#FFEDF0DB" FontSize="25" Click="payment_Click" Foreground="Black" FontFamily="Segoe UI" FontWeight="Bold"/>
+        <TextBlock x:Name="myTextBlock" HorizontalAlignment="Left" Margin="50,500,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="230" Background="#FFA73A3A" FontSize="18" TextAlignment="Center" FontFamily="Arial" Foreground="White"/>
+        <Button x:Name="before" Content="" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="70" Width="90" Click="before_Click" FontSize="20" Foreground="White" BorderBrush="#FFEEEEEE" Style="{StaticResource BtnMouseOverDisable}" Margin="0,0,300,0">
+            <Button.Background>
+                <ImageBrush ImageSource="/이전.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="delete" Content="" HorizontalAlignment="Stretch" Height="50" VerticalAlignment="Bottom" Width="90" Margin="300,0,0,10" IsCancel="True" BorderBrush="#FFEEEEEE" Click="delete_Click" Style="{StaticResource BtnMouseOverDisable}">
+            <Button.Background>
+                <ImageBrush ImageSource="/삭제.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Page>

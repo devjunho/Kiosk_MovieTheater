@@ -1,0 +1,100 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="back.htm" />
+    <None Remove="back.png" />
+    <None Remove="Resources\드리미 로딩중.jpg" />
+    <None Remove="광주상생카드.jpg" />
+    <None Remove="다음.png" />
+    <None Remove="다음3.png" />
+    <None Remove="더블콤보.png" />
+    <None Remove="드리미.jpg" />
+    <None Remove="롯데시네마 수정.jpg" />
+    <None Remove="롯데시네마.jpg" />
+    <None Remove="롯데시네마문구.webp" />
+    <None Remove="말풍선모양.jpg" />
+    <None Remove="모바일 금액권.jpg" />
+    <None Remove="반반팝콘.png" />
+    <None Remove="사이다L.png" />
+    <None Remove="사이다M.png" />
+    <None Remove="삭제.png" />
+    <None Remove="삼성페이.jpg" />
+    <None Remove="스낵2.jpg" />
+    <None Remove="스위트콤보.png" />
+    <None Remove="스크린샷 2024-05-30 162012.png" />
+    <None Remove="스크린샷 2024-06-01 014033.png" />
+    <None Remove="애플페이.png" />
+    <None Remove="오리지널M.png" />
+    <None Remove="오리지널팝콘L.png" />
+    <None Remove="이전.png" />
+    <None Remove="이전으로.png" />
+    <None Remove="카드 이미지.png" />
+    <None Remove="카드꽃기.png" />
+    <None Remove="카라멜M.png" />
+    <None Remove="카라멜팝콘L.png" />
+    <None Remove="콜라L.png" />
+    <None Remove="콜라M.png" />
+    <None Remove="핸드폰단말기.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="back.htm" />
+    <Resource Include="back.png" />
+    <Resource Include="Resources\드리미 로딩중.jpg" />
+    <Resource Include="광주상생카드.jpg" />
+    <Resource Include="다음.png" />
+    <Resource Include="다음3.png" />
+    <Resource Include="더블콤보.png" />
+    <Resource Include="드리미.jpg" />
+    <Resource Include="롯데시네마 수정.jpg" />
+    <Resource Include="롯데시네마.jpg" />
+    <Resource Include="롯데시네마문구.webp" />
+    <Resource Include="말풍선모양.jpg" />
+    <Resource Include="모바일 금액권.jpg" />
+    <Resource Include="반반팝콘.png" />
+    <Resource Include="사이다L.png" />
+    <Resource Include="사이다M.png" />
+    <Resource Include="삭제.png" />
+    <Resource Include="삼성페이.jpg" />
+    <Resource Include="스낵2.jpg" />
+    <Resource Include="스위트콤보.png" />
+    <Resource Include="스크린샷 2024-05-30 162012.png" />
+    <Resource Include="스크린샷 2024-06-01 014033.png" />
+    <Resource Include="애플페이.png" />
+    <Resource Include="오리지널M.png" />
+    <Resource Include="오리지널팝콘L.png" />
+    <Resource Include="이전.png" />
+    <Resource Include="이전으로.png" />
+    <Resource Include="카드 이미지.png" />
+    <Resource Include="카드꽃기.png" />
+    <Resource Include="카라멜M.png" />
+    <Resource Include="카라멜팝콘L.png" />
+    <Resource Include="콜라L.png" />
+    <Resource Include="콜라M.png" />
+    <Resource Include="핸드폰단말기.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
